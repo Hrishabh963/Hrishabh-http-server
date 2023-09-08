@@ -23,7 +23,7 @@
         "prettier": "^3.0.3"
     },
     "lint-staged": {
-        ".*/*.js": [
+        "./*.js": [
             "eslint . --fix",
             "prettier --write ."
         ]
