@@ -1,35 +1,35 @@
 {
-    "name": "async_javascript",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "test": "jest",
-        "configure-husky": "npx husky install && npx husky add .husky/pre-commit \"npx --no-install lint-staged\""
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "devDependencies": {
-        "eslint": "^8.48.0",
-        "husky": "^8.0.3",
-        "jest": "^29.6.4",
-        "lint-staged": "^14.0.1",
-        "prettier": "^3.0.3"
-    },
-    "lint-staged": {
-        "./*.js": [
-            "eslint . --fix",
-            "prettier --write ."
-        ]
-    },
-    "dependencies": {
-        "csv-parser": "^3.0.0",
-        "fast-csv": "^4.3.6"
+  "name": "async_javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "configure-husky": "npx husky install && npx husky add .husky/pre-commit \"npx --no-install lint-staged\""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
     }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.48.0",
+    "husky": "^8.0.3",
+    "jest": "^29.6.4",
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.0.3"
+  },
+  "lint-staged": {
+    "./*.js": [
+      "eslint . --fix",
+      "prettier --write ."
+    ]
+  },
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "fast-csv": "^4.3.6"
+  }
 }
