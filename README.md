@@ -1,7 +1,7 @@
 
 # HTTP Server
 
-A simple http server that server different data on different end points and sets status header accordingly
+A simple http server that serves different data on different end points and sets status header accordingly
 
 
 ## Installation
