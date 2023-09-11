@@ -15,7 +15,7 @@ app.get('/json', (req, res) => {
   res.json(jsonData);
 });
 
-// Handling //uuid endpoint
+// Handling /uuid endpoint
 app.get('/uuid', (req, res) => {
   res.set({ 'Content-Type': 'application/json' });
   res.json({ uuid: getUuid() });
