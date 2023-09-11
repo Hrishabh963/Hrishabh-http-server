@@ -23,7 +23,6 @@ const server = http.createServer((req, res) => {
     if (pathParams[1] === 'status') {
       //Setting the status code to the given code passed as /status/{status_code}
       res.writeHead(Number(pathParams[2]), { 'Content-Type': 'text/plain' });
-      res.end(`Ending the request with status ${pathParams[2]}`);
     }
     if (pathParams[1] === 'delay') {
       //Sending a success response after n seconds of delay passed as /delay/{delay_in_seconds}
@@ -32,8 +31,6 @@ const server = http.createServer((req, res) => {
         res.writeHead(200, { 'Content-Type': 'text/plain' });
         res.end(`Success after ${delay} seconds of delay`);
       }, delay * 1000);
-    } else {
-      res.end(`Invalid endpoint`);
     }
   }
 });
