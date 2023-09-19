@@ -6,7 +6,7 @@ const htmlCode = require('./data').html;
 const server = http.createServer((req, res) => {
   if (req.url === '/html') {
     //Serving html data by writing content type as html
-    res.writeHead({ status: 200 }, { 'Content-Type': 'text/html' });
+    res.writeHead(200, { 'Content-Type': 'text/html' });
     res.end(htmlCode);
   } else if (req.url === '/json') {
     //Serving a json file  by setting content-type header as json
